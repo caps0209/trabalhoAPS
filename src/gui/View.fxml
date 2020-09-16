@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="262.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <children>
+      <Label layoutX="55.0" layoutY="53.0" prefHeight="17.0" prefWidth="110.0" text="Calcular Soma" textAlignment="JUSTIFY" />
+      <TextField fx:id="txtnum1" layoutX="23.0" layoutY="88.0" promptText="Primeiro numero" />
+      <TextField fx:id="txtnum2" layoutX="23.0" layoutY="125.0" promptText="Segundo numero" />
+      <Button fx:id="btCalc" layoutX="69.0" layoutY="172.0" mnemonicParsing="false" onAction="#onBtCalcAction" text="Calcular" />
+      <Label layoutX="34.0" layoutY="212.0" text="Resultado:" />
+      <Label fx:id="labelResult" layoutX="101.0" layoutY="212.0" prefHeight="17.0" prefWidth="94.0" />
+      <ChoiceBox fx:id="choicebox" layoutX="235.0" layoutY="88.0" onMousePressed="#onActionChoiceBox" prefWidth="150.0" />
+      <Label layoutX="235.0" layoutY="53.0" text="Escolha um item" />
+      <Button fx:id="btAlerta" layoutX="286.0" layoutY="172.0" mnemonicParsing="false" onAction="#onBtAlerta" text="Alerta" />
+   </children>
+</AnchorPane>
